@@ -1,6 +1,6 @@
-# © 2026 Strategos. All rights reserved.
-# sila — stub package. Redirects to sila-sierra.
-# See: https://github.com/ShadowStrike-CTF/shadowstrike-suite
+# Sila — Forensic evidence management.
+# © 2026 Strategos Pty Ltd. All rights reserved.
+# Aut Viam Inveniam Aut Faciam
 
 try:
     from sila_sierra import *  # noqa: F401, F403

@@ -1,4 +1,6 @@
-# © 2026 Strategos. All rights reserved.
+# © 2026 Strategos Pty Ltd. All rights reserved.
+# Aut Viam Inveniam Aut Faciam
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
@@ -6,29 +8,27 @@ build-backend = "hatchling.build"
 [project]
 name = "sila"
 version = "1.0.0"
-description = "Sila (Sierra) — part of the Strategos Suite. Install sila-sierra for the full package."
+description = "Forensic evidence management. Part of the Strategos Suite."
 readme = "README.md"
-license = { text = "MIT" }
+license = {text = "Proprietary"}
 authors = [
-  { name = "ShadowStrike", email = "r@strategos.au" }
-]
-keywords = ["strategos", "shadowstrike", "forensics", "sila"]
-classifiers = [
-  "Development Status :: 3 - Alpha",
-  "Intended Audience :: Developers",
-  "License :: OSI Approved :: MIT License",
-  "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
+    {name = "Strategos", email = "r@strategos.au"}
 ]
 requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+]
 dependencies = [
-  "sila-sierra",
+    "sila-sierra",
 ]
 
 [project.urls]
-Homepage = "https://strategos.au"
-Repository = "https://github.com/ShadowStrike-CTF/shadowstrike-suite"
+"Source" = "https://github.com/ShadowStrike-CTF/sila"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/sila"]
